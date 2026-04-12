@@ -2,10 +2,10 @@ extends CharacterBody2D
 class_name Player
 
 const speed: float = 100
-var zoom: float = 1
+var zoom: float = 3
 
-const zoom_min: float = 0.9
-const zoom_max: float = 2.0
+const zoom_min: float = 2
+const zoom_max: float = 5.0
 
 @onready var gun_pivot: Node2D = $gun_pivot
 @onready var cursor: Sprite2D = $cursor
