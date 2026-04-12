@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://nw6w75arixgi"]
+
+[ext_resource type="PackedScene" uid="uid://dwry7m0o4xy24" path="res://entitys/player/player.tscn" id="1_o5qli"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
+size = Vector2(20, 664)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sugp2"]
+size = Vector2(20, 1151)
+
+[node name="Main" type="Node2D"]
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls"]
+position = Vector2(0, 322)
+shape = SubResource("RectangleShape2D_0wfyh")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls"]
+position = Vector2(1152, 322)
+shape = SubResource("RectangleShape2D_0wfyh")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls"]
+position = Vector2(576.5, -2.0000107)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_sugp2")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls"]
+position = Vector2(575, 651)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_sugp2")
+
+[node name="Player" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(580, 304)
