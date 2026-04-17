@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://khq6ysdcnol2" path="res://entitys/player/sprites/main_character.png" id="2_ytc5b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ytc5b"]
-radius = 8.062258
+radius = 8.06226
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rpjyd"]
 animations = [{
@@ -46,8 +46,8 @@ shape = SubResource("CircleShape2D_ytc5b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_rpjyd")
+offset = Vector2(-2, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -57,12 +57,31 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="healthbar_1" type="ProgressBar" parent="Camera2D/hud"]
+[node name="GridContainer" type="GridContainer" parent="Camera2D/hud"]
 layout_mode = 0
-offset_left = -81.0
-offset_top = -59.0
-offset_right = -77.0
-offset_bottom = -32.0
+offset_left = -136.0
+offset_top = -64.0
+offset_right = -46.0
+offset_bottom = -24.0
+columns = 3
+
+[node name="healthbar_1" type="ProgressBar" parent="Camera2D/hud/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 33.0
+step = 1.0
+
+[node name="healthbar_2" type="ProgressBar" parent="Camera2D/hud/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 33.0
+step = 1.0
+
+[node name="healthbar_3" type="ProgressBar" parent="Camera2D/hud/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 33.0
+step = 1.0
 
 [node name="gun_pivot" type="Node2D" parent="."]
 

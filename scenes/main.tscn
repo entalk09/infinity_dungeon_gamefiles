@@ -21,13 +21,13 @@ position = Vector2(1152, 322)
 shape = SubResource("RectangleShape2D_0wfyh")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls"]
-position = Vector2(576.5, -2.0000107)
-rotation = -1.5707964
+position = Vector2(576.5, -2.00001)
+rotation = -1.5708
 shape = SubResource("RectangleShape2D_sugp2")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls"]
 position = Vector2(575, 651)
-rotation = -1.5707964
+rotation = -1.5708
 shape = SubResource("RectangleShape2D_sugp2")
 
 [node name="Player" parent="." instance=ExtResource("1_o5qli")]

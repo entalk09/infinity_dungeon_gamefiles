@@ -12,7 +12,7 @@ config_version=5
 
 config/name="inf_dungeon_prototype"
 run/main_scene="uid://nw6w75arixgi"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [input]
