@@ -16,6 +16,7 @@ const zoom_max: float = 5.0
 
 @onready var gun_pivot: Node2D = $gun_pivot
 @onready var cursor: Sprite2D = $cursor
+@export var gun_sprite: Sprite2D
 
 @onready var camera: Camera2D = $Camera2D
 @onready var hud: Control = $Camera2D/hud
@@ -25,6 +26,7 @@ const zoom_max: float = 5.0
 
 var bullet = preload("res://entitys/bullet/bullet.tscn")
 
+var relative_coords: Vector2
 
 func _ready() -> void:
 	pass 
@@ -48,18 +50,24 @@ func _process(delta: float) -> void:
 
 	move_and_slide()
 	
+	if input_vect:
+		player_animator.play("walk")
+	else:
+		player_animator.play("default")
+	
 	gun_pivot.look_at(get_global_mouse_position())
 	cursor.global_position = get_global_mouse_position()
 	
 	if cursor.position.x < 0:
-		player_animator.scale.x = -1
+		player_animator.flip_h = true
+		gun_sprite.flip_v = true
 	else:
-		player_animator.scale.x = 1
+		player_animator.flip_h = false
+		gun_sprite.flip_v = false
 	
 	if Input.is_action_just_pressed("fire"):
 		fire_gun()
 		health -= 1
-		print(health)
 	
 	set_health_bar()
 

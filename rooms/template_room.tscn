@@ -1,0 +1,379 @@
+[gd_scene load_steps=84 format=3 uid="uid://46rilhqcrr5l"]
+
+[ext_resource type="Script" uid="uid://bgagiy4ys3flc" path="res://rooms/room.gd" id="1_7008k"]
+[ext_resource type="Texture2D" uid="uid://bexycvkdkanhv" path="res://rooms/wall_1.png" id="2_8iysr"]
+[ext_resource type="PackedScene" uid="uid://ypwf0a22v5op" path="res://rooms/door/door.tscn" id="3_opsxi"]
+[ext_resource type="Texture2D" uid="uid://bgy3mdd1iy87d" path="res://rooms/backgrounds/default/background (1)0000.png" id="4_8yol0"]
+[ext_resource type="Texture2D" uid="uid://cs6o3y1646gbs" path="res://rooms/backgrounds/default/background (1)0001.png" id="5_job0g"]
+[ext_resource type="Texture2D" uid="uid://b3b3utqqhlcka" path="res://rooms/backgrounds/default/background (1)0002.png" id="6_uif02"]
+[ext_resource type="Texture2D" uid="uid://ctea0mxiat5cl" path="res://rooms/backgrounds/default/background (1)0003.png" id="7_8m7p1"]
+[ext_resource type="Texture2D" uid="uid://dbnlsp1m6g3n2" path="res://rooms/backgrounds/default/background (1)0004.png" id="8_yuakh"]
+[ext_resource type="Texture2D" uid="uid://b460y0ryx2olm" path="res://rooms/backgrounds/default/background (1)0005.png" id="9_lxu0q"]
+[ext_resource type="Texture2D" uid="uid://ddkd4686lfbqk" path="res://rooms/backgrounds/default/background (1)0006.png" id="10_fokpb"]
+[ext_resource type="Texture2D" uid="uid://bpi4tt2n1ouqj" path="res://rooms/backgrounds/default/background (1)0007.png" id="11_nbvpp"]
+[ext_resource type="Texture2D" uid="uid://ra7tio4nuai2" path="res://rooms/backgrounds/default/background (1)0008.png" id="12_0clpt"]
+[ext_resource type="Texture2D" uid="uid://bmpi8b4seprsd" path="res://rooms/backgrounds/default/background (1)0009.png" id="13_nhkxa"]
+[ext_resource type="Texture2D" uid="uid://dehqa4titdce4" path="res://rooms/backgrounds/default/background (1)0010.png" id="14_v6uu7"]
+[ext_resource type="Texture2D" uid="uid://bsk44kedim36m" path="res://rooms/backgrounds/default/background (1)0011.png" id="15_d84q1"]
+[ext_resource type="Texture2D" uid="uid://ci0rdcwlevc8e" path="res://rooms/backgrounds/default/background (1)0012.png" id="16_j4c0m"]
+[ext_resource type="Texture2D" uid="uid://1ji7avsjakl0" path="res://rooms/backgrounds/default/background (1)0013.png" id="17_3lre5"]
+[ext_resource type="Texture2D" uid="uid://cy380up6ubdfb" path="res://rooms/backgrounds/default/background (1)0014.png" id="18_7gj8j"]
+[ext_resource type="Texture2D" uid="uid://wlq72whuqxjp" path="res://rooms/backgrounds/default/background (1)0015.png" id="19_1xtgq"]
+[ext_resource type="Texture2D" uid="uid://t1lsya5pmylv" path="res://rooms/backgrounds/default/background (1)0016.png" id="20_e8de0"]
+[ext_resource type="Texture2D" uid="uid://mcrslm0lw6ee" path="res://rooms/backgrounds/default/background (1)0017.png" id="21_sml1s"]
+[ext_resource type="Texture2D" uid="uid://dvb2m0f4f33mw" path="res://rooms/backgrounds/default/background (1)0018.png" id="22_6gwjy"]
+[ext_resource type="Texture2D" uid="uid://daaac0kdw1p5u" path="res://rooms/backgrounds/default/background (1)0019.png" id="23_37c75"]
+[ext_resource type="Texture2D" uid="uid://bkj4jgcbs7hyg" path="res://rooms/backgrounds/default/background (1)0020.png" id="24_w138b"]
+[ext_resource type="Texture2D" uid="uid://fju6jppcpfy4" path="res://rooms/backgrounds/default/background (1)0021.png" id="25_8jsjc"]
+[ext_resource type="Texture2D" uid="uid://cxqjuoy706e5c" path="res://rooms/backgrounds/default/background (1)0022.png" id="26_84lx2"]
+[ext_resource type="Texture2D" uid="uid://i8xfh05tlwgy" path="res://rooms/backgrounds/default/background (1)0023.png" id="27_o8krq"]
+[ext_resource type="Texture2D" uid="uid://b1u4f0rkhyehj" path="res://rooms/backgrounds/default/background (1)0024.png" id="28_n4f46"]
+[ext_resource type="Texture2D" uid="uid://s46vwuusiub0" path="res://rooms/backgrounds/default/background (1)0025.png" id="29_acj8k"]
+[ext_resource type="Texture2D" uid="uid://b8r6ukcsfjm0r" path="res://rooms/backgrounds/default/background (1)0026.png" id="30_l2ia6"]
+[ext_resource type="Texture2D" uid="uid://dge702xbvld8e" path="res://rooms/backgrounds/default/background (1)0027.png" id="31_5g6p1"]
+[ext_resource type="Texture2D" uid="uid://b4r58oml13lns" path="res://rooms/backgrounds/default/background (1)0028.png" id="32_exeg1"]
+[ext_resource type="Texture2D" uid="uid://be7m72otdnbhu" path="res://rooms/backgrounds/default/background (1)0029.png" id="33_p65jl"]
+[ext_resource type="Texture2D" uid="uid://busdehy6b056" path="res://rooms/backgrounds/default/background (1)0030.png" id="34_ht2x0"]
+[ext_resource type="Texture2D" uid="uid://d1jpdys5wxyl4" path="res://rooms/backgrounds/default/background (1)0031.png" id="35_ggx7n"]
+[ext_resource type="Texture2D" uid="uid://bakvbuobwhg2l" path="res://rooms/backgrounds/default/background (1)0032.png" id="36_xc32x"]
+[ext_resource type="Texture2D" uid="uid://cgfvng864auqk" path="res://rooms/backgrounds/default/background (1)0033.png" id="37_l4tq3"]
+[ext_resource type="Texture2D" uid="uid://cqs6e4wt1t8ql" path="res://rooms/backgrounds/default/background (1)0034.png" id="38_q0d8p"]
+[ext_resource type="Texture2D" uid="uid://bsl7ww2hyfsvs" path="res://rooms/backgrounds/default/background (1)0035.png" id="39_0rsjs"]
+[ext_resource type="Texture2D" uid="uid://m6a6oi37xlil" path="res://rooms/backgrounds/default/background (1)0036.png" id="40_w5ofd"]
+[ext_resource type="Texture2D" uid="uid://ddipdwokp2drp" path="res://rooms/backgrounds/default/background (1)0037.png" id="41_ye1ln"]
+[ext_resource type="Texture2D" uid="uid://br1yii8rut06g" path="res://rooms/backgrounds/default/background (1)0038.png" id="42_5ug6c"]
+[ext_resource type="Texture2D" uid="uid://boetdfxdtexu0" path="res://rooms/backgrounds/default/background (1)0039.png" id="43_dg5vg"]
+[ext_resource type="Texture2D" uid="uid://b8337mnjvw5js" path="res://rooms/backgrounds/default/background (1)0040.png" id="44_t3ldm"]
+[ext_resource type="Texture2D" uid="uid://bw14y3bvj6eu3" path="res://rooms/backgrounds/default/background (1)0041.png" id="45_xpy3s"]
+[ext_resource type="Texture2D" uid="uid://br4f8en448dlc" path="res://rooms/backgrounds/default/background (1)0042.png" id="46_usb7m"]
+[ext_resource type="Texture2D" uid="uid://qjp3f8yh8tnx" path="res://rooms/backgrounds/default/background (1)0043.png" id="47_udgut"]
+[ext_resource type="Texture2D" uid="uid://b0ka6at1te5sq" path="res://rooms/backgrounds/default/background (1)0044.png" id="48_b8upt"]
+[ext_resource type="Texture2D" uid="uid://dvuc37bauaev3" path="res://rooms/backgrounds/default/background (1)0045.png" id="49_u85fm"]
+[ext_resource type="Texture2D" uid="uid://xmawi8067ff6" path="res://rooms/backgrounds/default/background (1)0046.png" id="50_ied72"]
+[ext_resource type="Texture2D" uid="uid://c8ablrb058wtr" path="res://rooms/backgrounds/default/background (1)0047.png" id="51_8denk"]
+[ext_resource type="Texture2D" uid="uid://dkle76hd8myd8" path="res://rooms/backgrounds/default/background (1)0048.png" id="52_jebre"]
+[ext_resource type="Texture2D" uid="uid://bhmmjsobpl78i" path="res://rooms/backgrounds/default/background (1)0049.png" id="53_rhtok"]
+[ext_resource type="Texture2D" uid="uid://c1submmga2nr8" path="res://rooms/backgrounds/default/background (1)0050.png" id="54_c0lp8"]
+[ext_resource type="Texture2D" uid="uid://d2y1013g7sksv" path="res://rooms/backgrounds/default/background (1)0051.png" id="55_lpaux"]
+[ext_resource type="Texture2D" uid="uid://dl8e481wepwi4" path="res://rooms/backgrounds/default/background (1)0052.png" id="56_miya5"]
+[ext_resource type="Texture2D" uid="uid://tnijfcwi8noe" path="res://rooms/backgrounds/default/background (1)0053.png" id="57_1fj1h"]
+[ext_resource type="Texture2D" uid="uid://bdc5qcf6aqvvr" path="res://rooms/backgrounds/default/background (1)0054.png" id="58_tambf"]
+[ext_resource type="Texture2D" uid="uid://djhdyrombevgb" path="res://rooms/backgrounds/default/background (1)0055.png" id="59_2bdjy"]
+[ext_resource type="Texture2D" uid="uid://drrf77m2qiocr" path="res://rooms/backgrounds/default/background (1)0056.png" id="60_ua46e"]
+[ext_resource type="Texture2D" uid="uid://y35fewkuadqf" path="res://rooms/backgrounds/default/background (1)0057.png" id="61_htly2"]
+[ext_resource type="Texture2D" uid="uid://c5r33y0w4nhlw" path="res://rooms/backgrounds/default/background (1)0058.png" id="62_oyi5d"]
+[ext_resource type="Texture2D" uid="uid://cwhfduvc7nvll" path="res://rooms/backgrounds/default/background (1)0059.png" id="63_ekn18"]
+[ext_resource type="Texture2D" uid="uid://dfpc5d1bwr8eh" path="res://rooms/backgrounds/default/background (1)0060.png" id="64_rs05b"]
+[ext_resource type="Texture2D" uid="uid://cefkuj8iq48bd" path="res://rooms/backgrounds/default/background (1)0061.png" id="65_c5scb"]
+[ext_resource type="Texture2D" uid="uid://txll1svr27ti" path="res://rooms/backgrounds/default/background (1)0062.png" id="66_lr2ae"]
+[ext_resource type="Texture2D" uid="uid://danrh71tbe3e4" path="res://rooms/backgrounds/default/background (1)0063.png" id="67_0x33a"]
+[ext_resource type="Texture2D" uid="uid://drj5yvwauhc4i" path="res://rooms/backgrounds/default/background (1)0064.png" id="68_dayyo"]
+[ext_resource type="Texture2D" uid="uid://c5tc30w2thkeg" path="res://rooms/backgrounds/default/background (1)0065.png" id="69_5642q"]
+[ext_resource type="Texture2D" uid="uid://djnxsgrw2ny1u" path="res://rooms/backgrounds/default/background (1)0066.png" id="70_no8bt"]
+[ext_resource type="Texture2D" uid="uid://dmkhwfh54usm0" path="res://rooms/backgrounds/default/background (1)0067.png" id="71_qao85"]
+[ext_resource type="Texture2D" uid="uid://yk8diai5w562" path="res://rooms/backgrounds/default/background (1)0068.png" id="72_37116"]
+[ext_resource type="Texture2D" uid="uid://cvqsv7wh62oqk" path="res://rooms/backgrounds/default/background (1)0069.png" id="73_iv7cn"]
+[ext_resource type="Texture2D" uid="uid://dv737k2pkshqp" path="res://rooms/backgrounds/default/background (1)0070.png" id="74_bl46o"]
+[ext_resource type="Texture2D" uid="uid://1krw2u2m3oeu" path="res://rooms/backgrounds/default/background (1)0071.png" id="75_biwic"]
+[ext_resource type="Texture2D" uid="uid://cuow860n8r1cp" path="res://rooms/backgrounds/default/background (1)0072.png" id="76_f1vhf"]
+[ext_resource type="Texture2D" uid="uid://clrf1vpdokqp2" path="res://rooms/backgrounds/default/background (1)0073.png" id="77_1i03y"]
+[ext_resource type="Texture2D" uid="uid://x637vt66rn88" path="res://rooms/backgrounds/default/background (1)0074.png" id="78_juex0"]
+[ext_resource type="Texture2D" uid="uid://d08xsmlnq2cah" path="res://rooms/backgrounds/default/background (1)0075.png" id="79_5m87p"]
+[ext_resource type="Texture2D" uid="uid://cx7ngg5aaki26" path="res://rooms/backgrounds/default/background (1)0076.png" id="80_p554w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8iysr"]
+size = Vector2(400, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opsxi"]
+size = Vector2(16, 224)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gyocs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8yol0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_job0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uif02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8m7p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yuakh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lxu0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fokpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nbvpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0clpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nhkxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_v6uu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d84q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j4c0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3lre5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7gj8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_1xtgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_e8de0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_sml1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6gwjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_37c75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_w138b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_8jsjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_84lx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_o8krq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_n4f46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_acj8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_l2ia6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_5g6p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_exeg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_p65jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ht2x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ggx7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_xc32x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_l4tq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_q0d8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_0rsjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_w5ofd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ye1ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_5ug6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_dg5vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_t3ldm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_xpy3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_usb7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_udgut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_b8upt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_u85fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_ied72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_8denk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_jebre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_rhtok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_c0lp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_lpaux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_miya5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_1fj1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_tambf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_2bdjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_ua46e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_htly2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_oyi5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_ekn18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_rs05b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_c5scb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_lr2ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_0x33a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_dayyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_5642q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_no8bt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_qao85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_37116")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_iv7cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_bl46o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_biwic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_f1vhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_1i03y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_juex0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_5m87p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_p554w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="template_room" type="Node2D" node_paths=PackedStringArray("doors")]
+texture_filter = 1
+script = ExtResource("1_7008k")
+doors = [NodePath("Door"), NodePath("Door2"), NodePath("Door3"), NodePath("Door4")]
+
+[node name="outer_walls" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1, 1)
+texture = ExtResource("2_8iysr")
+
+[node name="Door" parent="." instance=ExtResource("3_opsxi")]
+position = Vector2(0, -103)
+collision_layer = 0
+
+[node name="Door2" parent="." instance=ExtResource("3_opsxi")]
+position = Vector2(-191, 0)
+rotation = -1.5708
+my_direction = 2
+
+[node name="Door3" parent="." instance=ExtResource("3_opsxi")]
+position = Vector2(0, 104)
+rotation = -3.14159
+my_direction = 1
+
+[node name="Door4" parent="." instance=ExtResource("3_opsxi")]
+position = Vector2(191, 0)
+rotation = -4.71239
+my_direction = 3
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -104)
+shape = SubResource("RectangleShape2D_8iysr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 106)
+shape = SubResource("RectangleShape2D_8iysr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-192, 0)
+shape = SubResource("RectangleShape2D_opsxi")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(192, 0)
+shape = SubResource("RectangleShape2D_opsxi")
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_gyocs")
+autoplay = "default"
