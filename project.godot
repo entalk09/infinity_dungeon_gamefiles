@@ -67,3 +67,7 @@ zoom_out={
 2d_physics/layer_1="walls"
 2d_physics/layer_2="player"
 2d_physics/layer_3="bullets"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

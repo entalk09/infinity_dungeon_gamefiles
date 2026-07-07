@@ -1,4 +1,4 @@
-[gd_resource type="VisualShader" load_steps=34 format=3 uid="uid://d0onypddontc1"]
+[gd_resource type="VisualShader" format=3 uid="uid://d0onypddontc1"]
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_irdb5"]
 output_port_for_preview = 0
@@ -73,8 +73,8 @@ default_input_values = [0, 0.5, 1, 0.0]
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_bhm4f"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2ohcl"]
-seamless = true
 noise = SubResource("FastNoiseLite_bhm4f")
+seamless = true
 
 [sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_cppqm"]
 output_port_for_preview = 0
@@ -115,160 +115,9 @@ expanded_output_ports = [0]
 input_name = "uv"
 
 [resource]
-code = "shader_type canvas_item;
-render_mode blend_mix;
-
-uniform sampler2D noise : source_color, filter_nearest, repeat_enable;
-
-
-
-void fragment() {
-// Input:32
-	vec2 n_out32p0 = UV;
-
-
-// Distance:33
-	vec2 n_in33p1 = vec2(0.50000, 0.50000);
-	float n_out33p0 = distance(n_out32p0, n_in33p1);
-
-
-// FloatOp:35
-	float n_in35p1 = 0.25000;
-	float n_out35p0 = n_out33p0 * n_in35p1;
-
-
-// FloatFunc:34
-	float n_out34p0 = -(n_out35p0);
-
-
-// ColorConstant:5
-	vec4 n_out5p0 = vec4(0.133196, 0.133196, 0.133196, 1.000000);
-
-
-// Input:7
-	vec2 n_out7p0 = UV;
-	float n_out7p1 = n_out7p0.r;
-	float n_out7p2 = n_out7p0.g;
-
-
-// Input:4
-	float n_out4p0 = TIME;
-
-
-// FloatOp:27
-	float n_in27p1 = 0.17500;
-	float n_out27p0 = n_out4p0 * n_in27p1;
-
-
-// FloatFunc:26
-	float n_out26p0 = cos(n_out27p0);
-
-
-// FloatOp:25
-	float n_out25p0 = n_out7p1 + n_out26p0;
-
-
-// FloatFunc:28
-	float n_out28p0 = sin(n_out27p0);
-
-
-// FloatOp:24
-	float n_out24p0 = n_out7p2 + n_out28p0;
-
-
-// VectorCompose:22
-	vec2 n_out22p0 = vec2(n_out25p0, n_out24p0);
-
-
-// UVFunc:29
-	vec2 n_in29p1 = vec2(0.50000, 0.50000);
-	vec2 n_in29p2 = vec2(0.00000, 0.00000);
-	vec2 n_out29p0 = n_in29p2 * n_in29p1 + n_out22p0;
-
-
-	vec4 n_out31p0;
-// Texture2D:31
-	n_out31p0 = texture(noise, n_out29p0);
-
-
-// Step:30
-	float n_in30p0 = 0.50000;
-	float n_out30p0 = step(n_in30p0, n_out31p0.x);
-
-
-// FloatOp:17
-	float n_in17p1 = 0.12500;
-	float n_out17p0 = n_out4p0 * n_in17p1;
-
-
-// FloatFunc:16
-	float n_out16p0 = cos(n_out17p0);
-
-
-// FloatOp:15
-	float n_out15p0 = n_out7p1 + n_out16p0;
-
-
-// FloatFunc:3
-	float n_out3p0 = sin(n_out17p0);
-
-
-// FloatOp:14
-	float n_out14p0 = n_out7p2 + n_out3p0;
-
-
-// VectorCompose:13
-	vec2 n_out13p0 = vec2(n_out15p0, n_out14p0);
-
-
-// UVFunc:2
-	vec2 n_in2p1 = vec2(0.50000, 0.50000);
-	vec2 n_in2p2 = vec2(0.00000, 0.00000);
-	vec2 n_out2p0 = n_in2p2 * n_in2p1 + n_out13p0;
-
-
-	vec4 n_out6p0;
-// Texture2D:6
-	n_out6p0 = texture(noise, n_out2p0);
-
-
-// Step:19
-	float n_in19p0 = 0.25000;
-	float n_out19p0 = step(n_in19p0, n_out6p0.x);
-
-
-// FloatOp:20
-	float n_in20p1 = 0.50000;
-	float n_out20p0 = n_out19p0 * n_in20p1;
-
-
-// MultiplyAdd:21
-	float n_in21p1 = 0.50000;
-	float n_out21p0 = fma(n_out30p0, n_in21p1, n_out20p0);
-
-
-// VectorOp:10
-	vec4 n_out10p0 = n_out5p0 * vec4(n_out21p0);
-
-
-// FloatOp:36
-	float n_out36p0 = n_out34p0 + n_out10p0.x;
-
-
-// FloatConstant:11
-	float n_out11p0 = 1.000000;
-
-
-// Output:0
-	COLOR.rgb = vec3(n_out36p0);
-	COLOR.a = n_out11p0;
-
-
-}
-"
 mode = 1
 flags/light_only = false
-preview_params/noise = "Resource(\"res://entitys/player/background_fog_noise.tres\")"
+preview_params/noise = "Resource(\"uid://fbvs0g7h3ux2\", \"res://entitys/player/background_fog_noise.tres\")"
 nodes/fragment/0/position = Vector2(1580, 0)
 nodes/fragment/2/node = SubResource("VisualShaderNodeUVFunc_1q4qn")
 nodes/fragment/2/position = Vector2(-360, 220)

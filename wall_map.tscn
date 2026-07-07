@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cdlpsfu4nsv5y"]
+
+[ext_resource type="TileSet" uid="uid://d05owge4c4oos" path="res://new_tile_set.tres" id="1_c4uut"]
+
+[node name="WallMap" type="TileMap" unique_id=184381518]
+texture_filter = 1
+tile_set = ExtResource("1_c4uut")
+rendering_quadrant_size = 21
+format = 2
+layer_0/name = "wall"
+layer_0/z_index = 10
+layer_1/name = "floor"
+layer_1/z_index = -10
