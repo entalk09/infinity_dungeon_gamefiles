@@ -7,6 +7,6 @@
 [node name="Main" type="Node2D" unique_id=4082165]
 script = ExtResource("1_sugp2")
 
-[node name="Player" parent="." unique_id=641357470 instance=ExtResource("1_o5qli")]
-
 [node name="template_room" parent="." unique_id=1604834315 instance=ExtResource("2_0wfyh")]
+
+[node name="Player" parent="." unique_id=641357470 instance=ExtResource("1_o5qli")]

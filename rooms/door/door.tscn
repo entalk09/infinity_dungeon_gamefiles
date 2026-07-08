@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ypwf0a22v5op"]
+[gd_scene format=3 uid="uid://ypwf0a22v5op"]
 
 [ext_resource type="Script" uid="uid://bpjik522qgo8g" path="res://door.gd" id="1_g44rr"]
 [ext_resource type="Texture2D" uid="uid://jaoqdugeexh" path="res://rooms/door/Door_animation_basic0000.png" id="2_h52vb"]
@@ -41,14 +41,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Door" type="Area2D"]
+[node name="Door" type="Area2D" unique_id=1100271297]
+z_index = 1
 script = ExtResource("1_g44rr")
 metadata/_custom_type_script = "uid://bpjik522qgo8g"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1190676775]
 shape = SubResource("RectangleShape2D_kj28q")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1575760993]
 texture_filter = 1
 position = Vector2(80, 80)
 sprite_frames = SubResource("SpriteFrames_64jso")
