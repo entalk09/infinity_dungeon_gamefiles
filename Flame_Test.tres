@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dqvuvrg0braas"]
+
+[ext_resource type="Shader" uid="uid://4t6l5awkvcuh" path="res://fire_test.tres" id="1_8y6s1"]
+
+[sub_resource type="Gradient" id="Gradient_u5kky"]
+offsets = PackedFloat32Array(0, 0.75136614)
+colors = PackedColorArray(0, 0, 0, 1, 0.8646751, 0.86467516, 0.8646751, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xeefp"]
+noise_type = 2
+seed = 54
+frequency = 0.017
+fractal_type = 2
+cellular_jitter = 1.81
+cellular_return_type = 3
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_tohyo"]
+width = 128
+height = 128
+noise = SubResource("FastNoiseLite_xeefp")
+color_ramp = SubResource("Gradient_u5kky")
+seamless = true
+normalize = false
+seamless_blend_skirt = 0.208
+
+[resource]
+shader = ExtResource("1_8y6s1")
+shader_parameter/Texture2DParameter = SubResource("NoiseTexture2D_tohyo")

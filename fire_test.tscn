@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://du37vr5fivhvw"]
+[gd_scene format=3 uid="uid://du37vr5fivhvw"]
 
 [ext_resource type="Texture2D" uid="uid://dagp1pvbjgi0g" path="res://icon.svg" id="1_ngwbu"]
-[ext_resource type="Shader" uid="uid://4t6l5awkvcuh" path="res://fire_test.tres" id="1_u5kky"]
+[ext_resource type="Material" uid="uid://dqvuvrg0braas" path="res://Flame_Test.tres" id="1_u5kky"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_xeefp"]
-shader = ExtResource("1_u5kky")
+[node name="Node2D" type="Node2D" unique_id=1158683114]
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-material = SubResource("ShaderMaterial_xeefp")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=727745378]
+texture_filter = 1
+material = ExtResource("1_u5kky")
+position = Vector2(-0.5, 0)
+scale = Vector2(0.9921875, 1)
 texture = ExtResource("1_ngwbu")

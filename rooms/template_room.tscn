@@ -360,6 +360,7 @@ rotation = -4.71239
 my_direction = 3
 
 [node name="background" type="AnimatedSprite2D" parent="." unique_id=1032444018]
+self_modulate = Color(0.5330367, 0.5330367, 0.5330367, 1)
 light_mask = 3
 z_index = -1
 sprite_frames = SubResource("SpriteFrames_gyocs")
